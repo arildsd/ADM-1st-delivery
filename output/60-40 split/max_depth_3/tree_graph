@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="is_lunch_free/reduced <= 0.5\ngini = 0.667\nsamples = 600\nvalue = [197, 197, 206]\nclass = Good"] ;
+1 [label="is_prepared_completed <= 0.5\ngini = 0.65\nsamples = 373\nvalue = [88, 129, 156]\nclass = Good"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="is_race_group A <= 0.5\ngini = 0.663\nsamples = 239\nvalue = [69, 88, 82]\nclass = Average"] ;
+1 -> 2 ;
+3 [label="gini = 0.658\nsamples = 217\nvalue = [56, 80, 81]\nclass = Good"] ;
+2 -> 3 ;
+4 [label="gini = 0.517\nsamples = 22\nvalue = [13, 8, 1]\nclass = Bad"] ;
+2 -> 4 ;
+5 [label="is_parent_education_high school <= 0.5\ngini = 0.581\nsamples = 134\nvalue = [19, 41, 74]\nclass = Good"] ;
+1 -> 5 ;
+6 [label="gini = 0.562\nsamples = 120\nvalue = [16, 34, 70]\nclass = Good"] ;
+5 -> 6 ;
+7 [label="gini = 0.622\nsamples = 14\nvalue = [3, 7, 4]\nclass = Average"] ;
+5 -> 7 ;
+8 [label="is_prepared_completed <= 0.5\ngini = 0.631\nsamples = 227\nvalue = [109, 68, 50]\nclass = Bad"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="is_parent_education_some high school <= 0.5\ngini = 0.567\nsamples = 143\nvalue = [83, 39, 21]\nclass = Bad"] ;
+8 -> 9 ;
+10 [label="gini = 0.573\nsamples = 119\nvalue = [67, 36, 16]\nclass = Bad"] ;
+9 -> 10 ;
+11 [label="gini = 0.497\nsamples = 24\nvalue = [16, 3, 5]\nclass = Bad"] ;
+9 -> 11 ;
+12 [label="is_race_group D <= 0.5\ngini = 0.666\nsamples = 84\nvalue = [26, 29, 29]\nclass = Average"] ;
+8 -> 12 ;
+13 [label="gini = 0.662\nsamples = 61\nvalue = [23, 21, 17]\nclass = Bad"] ;
+12 -> 13 ;
+14 [label="gini = 0.59\nsamples = 23\nvalue = [3, 8, 12]\nclass = Good"] ;
+12 -> 14 ;
+}

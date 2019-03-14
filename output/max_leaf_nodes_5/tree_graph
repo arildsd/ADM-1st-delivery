@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="is_lunch_free/reduced <= 0.5\ngini = 0.666\nsamples = 999\nvalue = [330, 325, 344]\nclass = Good"] ;
+1 [label="is_prepared_completed <= 0.5\ngini = 0.653\nsamples = 644\nvalue = [157, 223, 264]\nclass = Good"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+3 [label="is_gender_female <= 0.5\ngini = 0.665\nsamples = 417\nvalue = [126, 153, 138]\nclass = Average"] ;
+1 -> 3 ;
+7 [label="gini = 0.658\nsamples = 203\nvalue = [80, 69, 54]\nclass = Bad"] ;
+3 -> 7 ;
+8 [label="gini = 0.646\nsamples = 214\nvalue = [46, 84, 84]\nclass = Average"] ;
+3 -> 8 ;
+4 [label="gini = 0.578\nsamples = 227\nvalue = [31, 70, 126]\nclass = Good"] ;
+1 -> 4 ;
+2 [label="is_prepared_none <= 0.5\ngini = 0.629\nsamples = 355\nvalue = [173, 102, 80]\nclass = Bad"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.666\nsamples = 131\nvalue = [42, 42, 47]\nclass = Good"] ;
+2 -> 5 ;
+6 [label="gini = 0.565\nsamples = 224\nvalue = [131, 60, 33]\nclass = Bad"] ;
+2 -> 6 ;
+}

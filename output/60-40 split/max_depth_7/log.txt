@@ -1,0 +1,6 @@
+Training accuracy: 0.5783333333333334
+Test accuracy: 0.4025
+Confusion matrix:
+[[73 31 29]
+ [53 22 54]
+ [31 41 66]]

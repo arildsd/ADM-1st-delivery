@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="is_lunch_free/reduced <= 0.5\ngini = 0.666\nsamples = 999\nvalue = [330, 325, 344]\nclass = Good"] ;
+1 [label="gini = 0.653\nsamples = 644\nvalue = [157, 223, 264]\nclass = Good"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.629\nsamples = 355\nvalue = [173, 102, 80]\nclass = Bad"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
